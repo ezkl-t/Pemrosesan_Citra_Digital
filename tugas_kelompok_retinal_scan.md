@@ -18,4 +18,9 @@ Meskipun pola retina dapat berubah dalam kasus diabetes, glaukoma atau gangguan 
 
 ><h2>Sejarah</h2>
 <p align="justify">
-Pemindaian retina dilakukan dengan memancarkan sinar inframerah berenergi rendah yang tidak terlihat ke mata seseorang saat mereka melihat melalui lensa mata pemindai. Sinar cahaya ini menelusuri jalur standar pada retina. Karena pembuluh darah retina menyerap cahaya lebih mudah daripada jaringan di sekitarnya, jumlah pantulan bervariasi selama pemindaian. Pola variasi didigitalkan dan disimpan dalam database.</p>
+Pemindaian retina dilakukan dengan memancarkan sinar inframerah berenergi rendah yang tidak terlihat ke mata seseorang saat mereka melihat melalui lensa mata pemindai. Sinar cahaya ini menelusuri jalur standar pada retina. Karena pembuluh darah retina menyerap cahaya lebih mudah daripada jaringan di sekitarnya, jumlah pantulan bervariasi selama pemindaian. Pola variasi didigitalkan dan disimpan dalam database.</p>&nbsp
+
+><h2>Kegunaan</h2>
+<p align="center"><img src="https://images.squarespace-cdn.com/content/v1/5cef97beea062400011caaa2/1586833747711-JKOYOROBBZQKNPS6SANA/digital%2Bretinal.jpg" style="width:35%">
+<p align="justify">
+Pemindai retina biasanya digunakan untuk tujuan otentikasi dan identifikasi. Pemindaian retina telah digunakan oleh beberapa lembaga pemerintah termasuk FBI, CIA, dan NASA, dan juga telah digunakan di penjara. Pemindaian retina juga memiliki aplikasi medis. Penyakit menular seperti AIDS, sifilis, malaria, cacar air dan penyakit Lyme serta penyakit keturunan seperti leukemia, limfoma, dan anemia sel sabit juga mempengaruhi mata. Kehamilan pun mempengaruhi mata. Demikian pula, indikasi kondisi kesehatan kronis seperti gagal jantung kongestif, aterosklerosis, dan masalah kolesterol pertama kali muncul di mata. Pemindaian retina terkadang dikacaukan dengan pengenalan iris, yang telah digunakan untuk cakupan aplikasi yang lebih luas.</p>
