@@ -16,10 +16,16 @@ Retina manusia adalah jaringan tipis yang terdiri dari sel-sel saraf yang terlet
 <p align="justify">
 Meskipun pola retina dapat berubah dalam kasus diabetes, glaukoma atau gangguan degeneratif retina, retina biasanya tetap tidak berubah dari lahir sampai kematian. Karena sifatnya yang unik dan tidak berubah, retina tampaknya merupakan biometrik yang paling tepat dan andal, selain DNA. Pusat Nasional untuk Pengadilan Negeri memperkirakan bahwa pemindaian retina memiliki tingkat kesalahan satu dari sepuluh juta.</p>&nbsp
 
-><h2>Sejarah</h2>
-<p align="center"><img src="https://www.wearethemighty.com/uploads/legacy/assets.rbl.ms/17315133/origin.png" width=35%></p>
+><h2>Cara Kerja</h2>
+<p align="center"><img src="https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41433-021-01926-y/MediaObjects/41433_2021_1926_Fig1_HTML.png" width=35%></p>
 <p align="justify">
 Pemindaian retina dilakukan dengan memancarkan sinar inframerah berenergi rendah yang tidak terlihat ke mata seseorang saat mereka melihat melalui lensa mata pemindai. Sinar cahaya ini menelusuri jalur standar pada retina. Karena pembuluh darah retina menyerap cahaya lebih mudah daripada jaringan di sekitarnya, jumlah pantulan bervariasi selama pemindaian. Pola variasi didigitalkan dan disimpan dalam database.</p>&nbsp
+
+><h2>Sejarah</h2>
+<p align="center"><img src="https://www.wearethemighty.com/uploads/legacy/assets.rbl.ms/17315133/origin.png" width=35%></p>
+
+<p align="justify">
+Ide untuk identifikasi retina pertama kali dicetuskan oleh Dr Carleton Simon dan Dr Isadore Goldstein dan diterbitkan di New York State Journal of Medicine pada tahun 1935. Idenya mendahului zamannya, tetapi begitu teknologi menyusul, konsep untuk pemindaian retina perangkat muncul pada tahun 1975. Pada tahun 1976, Robert "Buzz" Hill membentuk sebuah perusahaan bernama EyeDentify, Inc., dan melakukan upaya penuh waktu untuk meneliti dan mengembangkan perangkat semacam itu. Pada tahun 1978, alat khusus untuk pemindai retina dipatenkan, diikuti oleh model komersial pada tahun 1981.</p>&nbsp
 
 ><h2>Kegunaan</h2>
 <p align="center"><img src="https://images.squarespace-cdn.com/content/v1/5cef97beea062400011caaa2/1586833747711-JKOYOROBBZQKNPS6SANA/digital%2Bretinal.jpg" style="width:35%">
