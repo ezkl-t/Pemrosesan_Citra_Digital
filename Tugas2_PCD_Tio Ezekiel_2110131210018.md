@@ -1,4 +1,4 @@
-**Tio Ezekiel | 2110131210018**
+**Tio Ezekiel | 2110131210018 | Tugas 2 PCD**
 
 ># Eksplorasi Layer Pada Gambar
 
@@ -14,7 +14,7 @@ Blue    = 0 * img; B(:,:,3) = img(:,:,3); # Untuk warna biru
 
 Berikut adalah hasil eksplorasi saya dalam mengambil ketiga layer warna pada sebuah gambar.
 
-===================================================================================================================
+============================================================================================
 
 Gambar yang saya gunakan berukuran 32x32 seperti ini: ![gambar emoji 32x32](/img/sus.png)
 
