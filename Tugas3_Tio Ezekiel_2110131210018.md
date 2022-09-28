@@ -26,6 +26,19 @@ Teknik halftoning digital sederhana yang dikenal sebagai **patterning** melibatk
 
 Dithering dipakai dalam grafika komputer untuk memberikan ilusi kedalaman warna tinggi dengan menggunakan palet terbatas (kuantisasi warna). Caranya adalah dengan membuat rata-rata bagian citra sama dengan rata-rata pada bagian citra asalnya. Penglihatan manusia melihat warna-warna yang berdekatan sebagai campuran warna-warna tersebut. Layar televisi dan komputer menggunakan cara sifat pencampuran warna untuk menampilkan citra berwarna dengan fosfor tiga warna.
 
- <p align="center"><img src="img/contoh_dithering.png" width=60%></p>
+<p align="center"><img src="img/contoh_dithering.png" width=60%></p>
 
- - Warna yang dipakai hanyalah merah dan biru. Namun, seiring kotak-kotak itu diperkecil, dua warna tersebut tampak berwarna ungu.
+- Warna yang dipakai hanyalah merah dan biru. Namun, seiring kotak-kotak itu diperkecil, dua warna tersebut tampak berwarna ungu.
+
+# Penerapan 3 Method Grayscale (Lightness, Average, Luminosity)
+
+<p align="center"><img src="img/tugas3.png" width=80%></p>
+
+Diterapkan 3 method untuk mengubah gambar berwarna ke gambar kelabu (grayscale). Ketiga method tersebut adalah:
+1. Lightness Method    : ((min(R, G, B)) + (max (R, G, B))) / 2
+2. Average Method      : (R + G + B) / 3
+3. Luminosity Method   : (0.21 * R) + (0.72 * G) + (0.07 * B)
+
+Dari gambar di atas dapat terlihat bahwa method Luminosity memberikan hasil grayscale yang terbaik.
+
+Sedangkan pada Lightness dan Average warna nampak terlalu cerah dan terlalu gelap.
