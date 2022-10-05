@@ -24,11 +24,21 @@ Teknik halftoning digital sederhana yang dikenal sebagai **patterning** melibatk
 
 # Dithering
 
-Dithering dipakai dalam grafika komputer untuk memberikan ilusi kedalaman warna tinggi dengan menggunakan palet terbatas (kuantisasi warna). Caranya adalah dengan membuat rata-rata bagian citra sama dengan rata-rata pada bagian citra asalnya. Penglihatan manusia melihat warna-warna yang berdekatan sebagai campuran warna-warna tersebut. Layar televisi dan komputer menggunakan cara sifat pencampuran warna untuk menampilkan citra berwarna dengan fosfor tiga warna.
+Dithering atau pembauran galat dipakai dalam grafika komputer untuk memberikan ilusi kedalaman warna tinggi dengan menggunakan palet terbatas (kuantisasi warna). Caranya adalah dengan membuat rata-rata bagian citra sama dengan rata-rata pada bagian citra asalnya. Penglihatan manusia melihat warna-warna yang berdekatan sebagai campuran warna-warna tersebut. Layar televisi dan komputer menggunakan cara sifat pencampuran warna untuk menampilkan citra berwarna dengan fosfor tiga warna.
 
-<p align="center"><img src="img/contoh_dithering.png" width=60%></p>
+Sederhananya, algoritme dithering mencatat selisih warna (galat) yang dipilih dengan warna aslinya dan menambahkan selisih tersebut ke piksel tetangganya sebelum mencari palet warna terdekat untuknya. Dengan membaurkan galat-galat ini, hasil pengurangan warna (kuantisasi) masih tampak mirip dengan asalnya. Meski demikian, apabila jumlah warna terlalu sedikit (kedalaman warna yang terlalu dangkal), pola deraunya bisa saja terlihat.
+
+Ada beberapa sebab yang dapat memengaruhi kualitas citra yang dikurangi jumlah warnanya. Salah satunya adalah palet warna yang dipilih. Sebagai contoh, citra asal (Gambar 1) dapat dikurangi menjadi 216 warna aman untuk web. Jika tiap piksel pada citra asal langsung diganti menjadi warna terdekat pada palet tersebut, tidak ada pembauran galat yang dilakukan (Gambar 2). Namun, biasanya cara ini menghasilkan wilayah datar (kontur) dan kehilangan detail sehingga dapat terlihat cukup jauh dari asalnya. Bagian bergradasi dapat menghasilkan pemitaan warna yang cukup mengganggu. Penerapan pembauran galat dapat meminimalkan artefak visual dan lebih mencirikan citra asal (Gambar 3). Pembauran galat dapat mengurangi pemitaan warna dan daerah datar.
+
+Salah satu masalah yang muncul akibat palet warna yang tetap adalah warna yang dibutuhkan bisa saja tidak tersedia pada palet dan banyak warna yang ada tidak diperlukan. Misalnya, palet yang berisi banyak warna hijau kurang cocok untuk foto padang pasir. Penggunaan palet warna optimal dapat membantu untuk kasus ini. Palet warna optimal dibuat berdasarkan warna-warna yang paling sering muncul. Apabila citra asal dikurangi dengan palet warna optimal, hasilnya lebih mirip dengan citra asal (Gambar 4).
+
+Jumlah warna yang tersedia dalam palet juga menjadi salah satu sebab yang memengaruhi kualitas citra. Misal, jika warnanya hanya ada enam belas, citra hasil pengurangannya akan semakin kehilangan detail dengan lebih banyak daerah datar dan pemitaan warna (Gambar 5). Sekali lagi, pembauran galat dapat mengurangi artefak tersebut (Gambar 6).
+
+<p align="center"><img src="img/contoh-dithering.png" width=70%></p>
 
 - Warna yang dipakai hanyalah merah dan biru. Namun, seiring kotak-kotak itu diperkecil, dua warna tersebut tampak berwarna ungu.
+
+<p align="center"><img src="img/contoh_dithering.png" width=60%></p>
 
 # Penerapan 3 Method Grayscale (Lightness, Average, Luminosity)
 
@@ -42,3 +52,20 @@ Diterapkan 3 method untuk mengubah gambar berwarna ke gambar kelabu (grayscale).
 Dari gambar di atas dapat terlihat bahwa method Luminosity memberikan hasil grayscale yang terbaik.
 
 Sedangkan pada Lightness dan Average warna nampak terlalu cerah dan terlalu gelap.
+
+># Algoritma Threshold Pada Dithering
+
+Thresholding adalah proses mengubah citra berderajat keabuan menjadi citra biner atau hitam putih sehingga dapat diketahui daerah mana yang termasuk obyek dan background dari citra secara jelas. Citra hasil thresholding biasanya digunakan lebih lanjut untuk proses pengenalan obyek serta ekstraksi fitur.
+
+Thresholding juga di mana saat tiap piksel dibandingkan dengan nilai ambang tertentu. Cara ini adalah cara termudah daripada yang lain. Namun, hasilnya memiliki kekurangan detail yang besar.
+
+Singkatnya thresholding merupakan salah satu metode segmentasi citra di mana prosesnya didasarkan pada perbedaan derajat keabuan citra.
+
+Random dithering adalah usaha awal (seawal-awalnya tahun 1951) untuk mengurangi dampak akibat pengambangan biasa. Tiap piksel dibandingkan dengan nilai ambang acak sehingga menghasilkan citra yang berderau statis. Meski cara ini tidak menghasilkan artefak berpola, deraunya lebih sering merusak citra.
+
+
+
+<p align="center"><img src="img/gambar_thresholding.png" width=40%></p>
+
+Digunakan rumus berikut untuk menentukan thresholding:
+<p align="center"><img src="img/rumus_thresholding.png"></p>
