@@ -10,6 +10,7 @@ citra (image preprocessing). Untuk meningkatkan
 kualitas hasil proses image enhancement maka lebih
 baik manipulasi citra dilakukan dalam domain
 frekuensi.
+Dalam domain spasial sudah kita ketahui salah satu metodenya yakni *Bit Plane Slicing*.
 
 Pada proses perbaikan kualitas citra, ciri-ciri
 tertentu dalam citra lebih diperjelas kemunculannya.
