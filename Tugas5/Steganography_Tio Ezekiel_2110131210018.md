@@ -87,4 +87,4 @@ Dan berikut adalah gambar yang telah diproses menggunakan source code steganogra
 
 <p align="center"><img src="img/stego.png" width=75%></p>
 
-Kasat mata tidak terdapat perubahan karena perubahan hanyar terjadi di bit yang mengalami perubahan yakni pada Least Significant Bit. Jika kita ambil LSB nya maka dapat terlihat sebuah perubahan yang merupakan penambahan penulisan dari pesan rahasia yang sudah kita masukkan yaitu berupa nama dan NIM.
+Kasat mata tidak terdapat perubahan karena perubahan hanya terjadi di bit yang mengalami perubahan yakni pada Least Significant Bit. Jika kita ambil LSB nya maka dapat terlihat sebuah perubahan yang merupakan penambahan penulisan dari pesan rahasia yang sudah kita masukkan yaitu berupa nama dan NIM.
