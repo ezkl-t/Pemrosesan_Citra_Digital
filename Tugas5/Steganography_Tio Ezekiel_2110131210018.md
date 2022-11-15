@@ -81,10 +81,14 @@ imwrite(stego_img, "stego.png");
 
 Berikut adalah gambar yang akan digunakan pada source code steganography di atas:
 
-<p align="center"><img src="img/lofi.jpg" width=75%></p>
+<p align="center"><img src="img/lofi.png" width=75%></p>
 
 Dan berikut adalah gambar yang telah diproses menggunakan source code steganography tadi:
 
 <p align="center"><img src="img/stego.png" width=75%></p>
 
-Kasat mata tidak terdapat perubahan karena perubahan hanya terjadi di bit yang mengalami perubahan yakni pada Least Significant Bit. Jika kita ambil LSB nya maka dapat terlihat sebuah perubahan yang merupakan penambahan penulisan dari pesan rahasia yang sudah kita masukkan yaitu berupa nama dan NIM.
+Kasat mata tidak terdapat perubahan karena perubahan hanya terjadi di LSB (Least Significant Bit). Jika kita ambil LSB nya maka dapat terlihat sebuah perubahan yang merupakan penambahan penulisan dari pesan rahasia yang sudah kita masukkan yaitu berupa nama dan NIM.
+
+Setelah diterapkan fungsi zeros() pada gambar, maka terlihat ada perubahan di pojok kiri atas seperti ini:
+
+<p align="center"><img src="img/stego1.png" width=75%></p>
