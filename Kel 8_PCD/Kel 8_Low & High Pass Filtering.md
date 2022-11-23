@@ -3,26 +3,24 @@
 2. Ferzy Triwarsana Putra (2110131310003)
 3. Tio Ezekiel (2110131210018)
 
+---
+
 # Penerapan Low Pass Filtering dan High Pass Filtering
 
->## Low Pass Filtering Dengan Function Bawaan Octave
+>## Low Pass Filtering dan High Pass Filtering Dengan Function Bawaan Octave
 
 
 
->## Low Pass Filtering Tanpa Function Octave
+>## Low Pass Filtering dan High Pass Filtering Tanpa Function Octave
 
-<p align="center"><img src="img/low_pass.jpg" width=65%></p>
+## Kode Program
 
-## Hasilnya:
-<p align="center"><img src="img/hasil_low_pass.jpg" width=65%></p>
+<p align="center"><img width="479" alt="low1" src="https://user-images.githubusercontent.com/112605121/203600635-eac4d070-306d-4a71-8085-78916110a58e.PNG"></p>
 
->## High Pass Filtering Dengan Function Bawaan Octave
-
-
-
->## High Pass Filtering Tanpa Function Octave
-
-<p align="center"><img src="img/high_pass.jpg" width=65%></p>
+<p align="center"><img width="479" alt="low2" src="https://user-images.githubusercontent.com/112605121/203600681-1b7958fd-09bf-4f77-a3c0-f5c2ce9d54c6.PNG"></p>
 
 ## Hasilnya:
-<p align="center"><img src="img/hasil_high_pass.jpg" width=65%></p>
+
+<p align="center"><img width="961" alt="low3" src="https://user-images.githubusercontent.com/112605121/203601078-bbdd171d-6ce0-4fdd-8d70-884870204462.PNG"></p>
+
+---
