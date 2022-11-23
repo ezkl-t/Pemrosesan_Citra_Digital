@@ -1,6 +1,6 @@
 ## Anggota Kelompok 8
 1. Ana Maria Parasanti
-2. Ferzy Triwarsana Putra
+2. Ferzy Triwarsana Putra (2110131310003)
 3. Tio Ezekiel
 
 # Penerapan Low Pass Filtering dan High Pass Filtering
