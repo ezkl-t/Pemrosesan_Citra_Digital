@@ -1,5 +1,5 @@
 ## Anggota Kelompok 8
-1. Ana Maria Parasanti ()
+1. Ana Maria Parasanti (2110131320009)
 2. Ferzy Triwarsana Putra (2110131310003)
 3. Tio Ezekiel (2110131210018)
 
