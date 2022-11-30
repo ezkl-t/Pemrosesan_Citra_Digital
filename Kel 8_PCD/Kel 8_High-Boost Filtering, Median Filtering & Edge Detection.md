@@ -63,11 +63,22 @@ subplot(1,3,3),imshow(output),title('Output dari median filter');
 
 >## Edge Detection Dengan Function Bawaan Octave
 ```
+% memuat citra awal
+img = imread('CitraP6.jfif');
 
+% merubah ke skala keabuan
+img_gray = rgb2gray(img);
+
+% penerapan edge detection sobel
+img_edge = edge(img_gray,'sobel');
+
+% menampilkan output
+subplot(2,3,1), imshow(img_gray);title('Citra awal');
+subplot(2,3,3), imshow(img_edge);title('Edge detection menggunakan Sobel');
 ```
 
 ## Hasilnya:
-
+<img width="960" alt="edgeSobelFunction" src="img/edgeSobelFunction.PNG">
 
 >## High-Boost Filtering Tanpa Function Octave
 
@@ -176,11 +187,35 @@ subplot(133),imshow(output),title('output of median filter');
 >## Edge Detection Tanpa Function Octave
 
 ```
+% memuat citra awal
+A=imread('CitraP6.jfif');
 
+% merubah ke skala keabuan
+B=rgb2gray(A);
+
+C=double(B);
+
+% penerapan edge detection sobel
+for i=1:size(C,1)-2
+    for j=1:size(C,2)-2
+        % perhitungan pada bagian horizontal:
+        Gx=((2*C(i+2,j+1)+C(i+2,j)+C(i+2,j+2))-(2*C(i,j+1)+C(i,j)+C(i,j+2)));
+        % perhitungan pada bagian vertikal:
+        Gy=((2*C(i+1,j+2)+C(i,j+2)+C(i+2,j+2))-(2*C(i+1,j)+C(i,j)+C(i+2,j)));
+
+        % gradien gambar
+        B(i,j)=sqrt(Gx.^2+Gy.^2);
+
+    end
+end
+
+% menampilkan output
+subplot(2,3,1),imshow(A); title('Citra awal');
+subplot(2,3,3),imshow(B); title('Edge detection menggunakan Sobel');
 ```
 
 ## Hasilnya:
-
+<img width="960" alt="edgeSobelManual" src="img/edgeSobelManual.PNG">
 
 
 ---
