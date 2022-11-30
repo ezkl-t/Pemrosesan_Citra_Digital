@@ -69,8 +69,6 @@ subplot(2,2,4);imshow(J3);title("Filter (iii)");
 ## Hasilnya:
 <p align="center"><img width="65%" alt="low3" src="img/hasil_high_pass_function.png"></p>
 
->## High Pass Filtering Dengan Function Bawaan Octave
-
 >## Low Pass Filtering dan High Pass Filtering Tanpa Function Octave
 
 Berikut adalah functionnya
@@ -133,9 +131,6 @@ subplot(2,2,2); imshow(img_out2,[]); title('Output menggunakan kernel high pass 
 
 ## Hasilnya:
 
-### Low Pass Filter
-<p align="center"><img width="65%" alt="low3" src="img/hasil_low_pass.jpg"></p>
+<img width="961" alt="low3" src="https://user-images.githubusercontent.com/112605121/204811204-6f948086-6887-48c9-a63b-4dca50b88674.PNG">
 
-### High Pass Filter
-<p align="center"><img src="img/hasil_high_pass.jpg" width=65%></p>
 ---
