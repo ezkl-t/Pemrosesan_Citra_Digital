@@ -37,10 +37,28 @@ subplot(2,2,3); imshow(output); title('Citra hasil dari highboost filter');
 
 >## Median Filtering Dengan Function Bawaan Octave
 ```
+% Input gambar
+I = imread('CitraMedianFilter.jfif');
+
+% Ubah menjadi skala grayscale jika citra awal belum kelabu
+Im = rgb2gray(I);
+
+% Memberi noise (derau) pada citra
+noisy = imnoise(Im, 'salt & pepper',0.1);
+
+% Mengaplikasikan median filter
+output = medfilt2(noisy);
+
+% Menampilkan output
+figure(1);
+subplot(1,3,1),imshow(I),title('Citra awal');
+subplot(1,3,2),imshow(noisy),title('Citra setelah diberi noise');
+subplot(1,3,3),imshow(output),title('Output dari median filter');
 
 ```
 
 ## Hasilnya:
+<p align="center"><img src="img/medianFilterFunction.PNG" width=960></p>
 
 
 >## Edge Detection Dengan Function Bawaan Octave
@@ -112,10 +130,47 @@ subplot(2,2,3),imshow(hasil);title('Citra hasil dari highboost filter')
 >## Median Filtering Tanpa Function Octave
 
 ```
+% Input gambar
+I = imread('CitraP6.jfif');
+
+% Ubah menjadi skala keabuan
+Im = rgb2gray(I);
+
+% Memberi noise pada citra
+noisy = imnoise(Im, 'salt & pepper',0.1);
+
+% Menyimpan ukuran matriks ke dalam dua variabel
+[m,n] = size(noisy);
+
+output = zeros(m,n);
+
+% Mengkonversi ukuran matriks ke unsigned 8 bit integer
+output = uint8(output);
+
+for i = 1:m
+    for j = 1:n
+        % Untuk pembatas agar mask filter tidak melebihi dimensi gambar
+        xmin = max(1,i-1);
+        xmax = min(m,i+1);
+        ymin = max(1,j-1);
+        ymax = min(n,j+1);
+        % Mask filter akan menjadi:
+        temp = noisy(xmin:xmax, ymin:ymax);
+        output(i,j) = median(temp(:));
+    end
+end
+
+% Menampilkan output
+figure(1);
+set(gcf, 'Position', get(0,'ScreenSize'));
+subplot(131),imshow(I),title('Original Image');
+subplot(132),imshow(noisy),title('noisy Image');
+subplot(133),imshow(output),title('output of median filter');
 
 ```
 
 ## Hasilnya:
+<p align="center"><img src="img/medianFilterManual.png" width=960></p>
 
 
 >## Edge Detection Tanpa Function Octave
