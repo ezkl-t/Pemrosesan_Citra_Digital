@@ -181,7 +181,7 @@ subplot(133),imshow(output),title('output of median filter');
 ```
 
 ## Hasilnya:
-<p align="center"><img src="img/medianFilterManual.png" width=960></p>
+<p align="center"><img src="img/medianFilterManual.PNG" width=960></p>
 
 
 >## Edge Detection Tanpa Function Octave
